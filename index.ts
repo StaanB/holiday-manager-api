@@ -6,6 +6,7 @@ import { db } from "./db";
 const app = express();
 app.use(express.json());
 app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://holiday-manager.vercel.app/" }));
 app.use(express.urlencoded({ extended: true }));
 
 interface Requisition {
